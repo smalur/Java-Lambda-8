@@ -9,7 +9,6 @@ import java.util.stream.Stream;
  * Lambda tutorial on list class
  */
 public class EmployeeManager {
-  private static EmployeeManager instance;
   private List<String> employees;
 
   public EmployeeManager() {
@@ -17,6 +16,8 @@ public class EmployeeManager {
   }
 
 /** Singleton pattern
+  private static EmployeeManager instance;
+
   public static EmployeeManager getInstance() {
     if (instance == null) {
       synchronized (EmployeeManager.class) {
